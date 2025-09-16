@@ -1,0 +1,3 @@
+A CBT exam, or Computer-Based Test, is an assessment delivered and answered on a computer or tablet, replacing the traditional pen-and-paper method. Candidates log in, receive instructions, and interact with questions using a mouse and keyboard. CBTs offer benefits like faster results, increased security against malpractice, greater efficiency, and adaptability for various industries and educational systems.  
+
+A CBT exam is a Computer-Based Test, an assessment delivered electronically using a computer instead of the traditional paper-and-pencil method. This format is widely used by educational institutions, certification providers, and employers for evaluating a candidate's knowledge, skills, or abilities.
