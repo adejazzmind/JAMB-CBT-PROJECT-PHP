@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myschool CBT</title>
+    <style>
+        .grid-container {display: grid;grid-template-columns: 1fr 1fr;gap: 20px;}
+        .card {background-color: #f8f8f8;padding: 20px;border-radius: 1px;min-height: 150px;display: flex;flex-direction: column;justify-content: center;align-items: flex-start;}
+        .card.blue { background-color: #007bff; color: white; }
+        .card.red { background-color: #dc3545; color: white; }
+        .card.green { background-color: #28a745; color: white; }
+        .card.pink { background-color: #e83e8c; color: white; }
+        .card.orange { background-color: #fd7e14; color: white; }
+        .card.darkblue { background-color: #0056b3; color: white; } 
+        .card h2 {margin-top: 0;font-size: 1.5em;margin-bottom: 10px;}
+        .card p {font-size: 0.9em;line-height: 1.5;}
+        .icon {font-size: 3em;margin-bottom: 10px;}
+        a{text-decoration: none;color: white;}
+    </style>
+</head>
+<body>
+        <h1>Welcome to Myschool CBT</h1>
+        <div class="grid-container">
+            <div class="card blue">
+                <a href="http://localhost/PHP%20FILES/signcbtp2.php">
+                <span class="icon">&#10003;</span>
+                <h2>CBT Practice</h2>
+                <p>Access over 40,000 past questions and their solutions for JAMB, WAEC, NECO and NABTEB exams.</p>
+                </a>
+           </div>
+            <div class="card red">
+                <span class="icon">&#9992;</span> 
+                <h2>Global Learning</h2>
+                <p>Access all past questions and their solutions without any internet connection.</p>
+            </div>
+            <div class="card green">
+                <span class="icon">!</span>
+                <h2>Latest Updates</h2>
+                <p>Get updates about your examinations and schools</p>
+            </div>
+            <div class="card pink">
+                <span class="icon">&#128269;</span>
+                <h2>Search Questions</h2>
+                <p>Enables you search for a particular question keyword in any subject and get the answer and explanations.</p>
+            </div>
+            <div class="card orange">
+                <span class="icon">?</span>
+                <h2>Ask a Question</h2>
+                <p>Do you have a question? Ask here and also answer questions.</p>
+            </div>
+            <div class="card darkblue">
+                <span class="icon">&#9654;</span>
+                <h2>Video Lessons</h2>
+                <p>Watch free video lessons.</p>
+            </div>
+        </div>
+</body>
+</html>

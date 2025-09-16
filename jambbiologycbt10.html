@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JAMB BIOLOGY EXAM</title>
+    <script>
+        function cbt(){
+        var Q1=document.myform.q1.value;
+        var Q2=document.myform.q2.value;
+        var Q3=document.myform.q3.value;
+        var Q4=document.myform.q4.value;
+        var Q5=document.myform.q5.value;
+        var count=0;
+        if(Q1=="b"){
+        count++;}
+        if(Q2=="a"){
+        count++;}
+        if(Q3=="c"){
+        count++;}
+        if(Q4=="c"){
+        count++;}
+        if(Q5=="b"){
+        count++;}
+        alert("you score" + count + "/5")
+        }
+    </script>
+</head>
+<body>
+    <form action="http://localhost/PHP%20FILES/submitbiology.php" name= "myform" method="post" name="studentname">
+STUDENT NAME:<input type="text" id="username" name="studentname"><br><br>    
+Q1: Biology is the scientific study of living organisms and their interactions with the __________? <br>
+a. <input type= "radio" name="q1" value="a">Timmy<br>
+b. <input type= "radio" name="q1" value="b">Environment<br>
+c. <input type= "radio" name="q1" value="c">Jerry<br><br>
+
+Q2: The studies of plant is called _________? <br>
+a. <input type= "radio" name="q2" value="a">Botany<br>
+b. <input type= "radio" name="q2" value="b">Zion<br>
+c. <input type= "radio" name="q2" value="c">Gloria<br><br>
+
+Q3: The studies of an animal is called __________? <br>
+a. <input type= "radio" name="q3" value="a">Gloria<br>
+b. <input type= "radio" name="q3" value="b">Zynab Cooper<br>
+c. <input type= "radio" name="q3" value="c">Zoology<br><br>
+
+Q4: The studies of heredity and variation is _________<br>
+a. <input type= "radio" name="q4" value="a">Taofik<br>
+b. <input type= "radio" name="q4" value="b">Jerry<br>
+c. <input type= "radio" name="q4" value="c">Genetics<br><br>
+
+Q5: The studies of microorganisms is called ________ ? <br>
+a. <input type= "radio" name="q5" value="a">Microbilogy<br>
+b. <input type= "radio" name="q5" value="b">Zynab Copper<br>
+c. <input type= "radio" name="q5" value="c">Timmy<br><br>
+
+<input type="submit" name="myform" value="Submit Exam" onclick="cbt()">
+
+     <div class="button-container">
+        <a href="http://localhost/PHP%20FILES/jambchemistrycbt9.html" class="button">Back</a>
+        <a href="http://localhost/PHP%20FILES/jambLitrature%20in%20Englishcbt11.html" class="button">Next</a>
+    </div>
+    </form>
+</body>
+</html>

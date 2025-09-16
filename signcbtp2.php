@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Into System Account</title>
+    <style>
+       
+        .login-container {padding: 80px;border-radius: 2px;box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);width: 400px;position: relative;}
+        .close-button {position: absolute;top: 5px;right: 5px;background-color: #dc3545;color: white;border: none;border-radius: 1px;font-size: 1.2em;cursor: pointer;width: 5px;height: 2px;display: flex;justify-content: center;align-items: center;}
+        h2 {margin-top: 0;margin-bottom: 5px;font-size: 1.3em;}
+        input[type="text"],
+        input[type="password"] {width: calc(100% - 40px);padding: 5px;border: 1px solid #ced4da;border-radius: 1px;font-size: 1em;}
+        .remember-me input[type="checkbox"] {margin-right: 2px;}
+        .buttons-container {display: flex;justify-content: space-between;}
+        button {padding: 5px 10px;border: none;border-radius: 2px;font-size: 1em;cursor: pointer;transition:0.3s ease;color: white;}
+        .login-button {background-color: #dc3545;}
+        .create-account-button {background-color: #dc3545; }
+        a{background-color: #dc3545; text-decoration: none; color: white; width: 210px; text-align: center;}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <button class="close-button">&times;</button>
+        <p3>Sign Into System Account</p>
+        <form method="post" action="">
+            <div class="form-group">
+                <label for="username">Username</label><br>
+            <input type="text" id="username" name="username">
+            </div><br>
+            <div class="form-group">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password">
+            </div><br>
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div><br>
+            <div class="buttons-container">
+                <button type="submit" class="login-button" name="bttlogin">Login</button>
+                <a href="http://localhost/PHP%20FILES/systemaccountcbtp3.html">Create New System Account</a>
+            </div>
+        </form>
+    </div>
+    <?php
+$conn=mysqli_connect("localhost","root","","jambcbt");
+?>
+<?php
+session_start();
+if(isset($_POST['bttlogin'])){
+$USERNAME=$_POST['username'];
+$PASSWORD=$_POST['password'];
+$result=mysqli_query($conn,'select * from jamb where Username = "'.$USERNAME.'" and Password = "'.$PASSWORD.'"');
+if(mysqli_num_rows($result)==1){
+$_SESSION['username']=$USERNAME;
+header('location: http://localhost/PHP%20FILES/examcbtp4.html');
+}
+else{
+echo "invalid username or password";
+}
+}
+?>
+</body>
+</html>

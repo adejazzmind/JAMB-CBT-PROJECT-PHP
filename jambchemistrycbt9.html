@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JAMB CHEMISTRY EXAM</title>
+    <script>
+        function cbt(){
+        var Q1=document.myform.q1.value;
+        var Q2=document.myform.q2.value;
+        var Q3=document.myform.q3.value;
+        var Q4=document.myform.q4.value;
+        var Q5=document.myform.q5.value;
+        var count=0;
+        if(Q1=="b"){
+        count++;}
+        if(Q2=="a"){
+        count++;}
+        if(Q3=="c"){
+        count++;}
+        if(Q4=="c"){
+        count++;}
+        if(Q5=="b"){
+        count++;}
+        alert("you score" + count + "/5")
+        }
+    </script>
+</head>
+<body>
+    <form action="http://localhost/PHP%20FILES/submitchemistry.php" name= "myform" method="post" name="studentname">
+STUDENT NAME:<input type="text" id="username" name="studentname"><br><br>
+Q1: A Chemistry is the scientific study of the composition, properties and reactions of _________? <br>
+a. <input type= "radio" name="q1" value="a">Book<br>
+b. <input type= "radio" name="q1" value="b">matter<br>
+c. <input type= "radio" name="q1" value="c">Pen<br><br>
+
+Q2: At constant temperature, the volume of a given mass of an ideal gas is inversely proportional to its _________? <br>
+a. <input type= "radio" name="q2" value="a">pressure<br>
+b. <input type= "radio" name="q2" value="b">Gun<br>
+c. <input type= "radio" name="q2" value="c">shoe<br><br>
+
+Q3: At constant pressure, the volume of a given mass of an ideal gas is directly proportional to its absolute__________? <br>
+a. <input type= "radio" name="q3" value="a">Gloria<br>
+b. <input type= "radio" name="q3" value="b">Grammar<br>
+c. <input type= "radio" name="q3" value="c">temperature<br><br>
+
+Q4: An Atoms components are Proton, Neutrons and _________? <br>
+a. <input type= "radio" name="q4" value="a">Taofik<br>
+b. <input type= "radio" name="q4" value="b">Jerry<br>
+c. <input type= "radio" name="q4" value="c">Electrons<br><br>
+
+Q5: Avogadro's Law states that equal volumes of all gases, at the same temperature and _________? <br>
+a. <input type= "radio" name="q5" value="a">Basket<br>
+b. <input type= "radio" name="q5" value="b">pressures<br>
+c. <input type= "radio" name="q5" value="c">Cup<br><br>
+
+<input type="submit" name="myform" value="Submit Exam" onclick="cbt()">
+
+         <div class="button-container">
+        <a href="http://localhost/PHP%20FILES/examsessioncbtp8.html" class="button">Back</a>
+        <a href="http://localhost/PHP%20FILES/jambbiologycbt10.html" class="button">Next</a>
+    </div>
+    </form>
+</body>
+</html>
